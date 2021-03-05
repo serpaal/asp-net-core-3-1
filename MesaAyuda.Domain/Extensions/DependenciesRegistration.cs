@@ -1,6 +1,4 @@
-﻿using MesaAyuda.Domain.Mapper;
-using MesaAyuda.Domain.Repositories;
-using MesaAyuda.Domain.Services;
+﻿using MesaAyuda.Domain.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 
@@ -21,7 +19,8 @@ namespace MesaAyuda.Domain.Extensions
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             services
-                .AddScoped<IRequerimientoInfoService, RequerimientoInfoService>();
+                .AddScoped<IRequerimInfService, RequerimInfService>()
+                .AddScoped<IReqQdetalleService, ReqQdetalleService>();
 
             return services;
         }        

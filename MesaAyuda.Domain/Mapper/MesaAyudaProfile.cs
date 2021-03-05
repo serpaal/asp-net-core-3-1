@@ -8,9 +8,10 @@ namespace MesaAyuda.Domain.Mapper
     {
         public MesaAyudaProfile()
         {
-            //CreateMap<RequerimientoInfoResponse, RequerimientoInfo>().ReverseMap();
-            CreateMap<RequerimientoInfo, RequerimientoInfoResponse>()
-                .ForMember(dest => dest.Detalis, opt => opt.MapFrom(src => src.Detalle)); //Map from RequerimientoInfo Object to RequerimientoInfoResponse Object
+            CreateMap<RequerimInf, RequerimInfResponse>();
+            CreateMap<ReqQdetalle, ReqQdetalleResponse>();
+            /*CreateMap<RequerimientoInfo, RequerimientoInfoResponse>()
+                .ForMember(dest => dest., opt => opt.MapFrom(src => src.Detalle)); */
         }
     }
 }

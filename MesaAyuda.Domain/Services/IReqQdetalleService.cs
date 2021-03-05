@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 
 namespace MesaAyuda.Domain.Services
 {
-    public interface IRequerimientoInfoService
+    public interface IReqQdetalleService
     {
-        Task<IEnumerable<RequerimientoInfoResponse>> GetRequerimientosInfoAsync();
+        Task<IEnumerable<ReqQdetalleResponse>> GetReqQdetalleAsync();
     }
 }

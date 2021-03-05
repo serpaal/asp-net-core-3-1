@@ -31,8 +31,8 @@ namespace MesaAyuda.API
         {
             services
              .AddMesaAyudaContext(Configuration.GetSection("DataSource:ConnectionString").Value)
-             .AddScoped<IRequerimientoInfoRepository, RequerimientoInfoRepository>()
-             //.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies())
+             .AddScoped<IRequerimInfRepository, RequerimInfRepository>()
+             .AddScoped<IReqQdetalleRepository, ReqQdetalleRepository>()
              .AddMappers()
              .AddServices()
              .AddControllers();

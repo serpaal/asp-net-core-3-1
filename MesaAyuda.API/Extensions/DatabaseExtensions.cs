@@ -9,7 +9,7 @@ namespace MesaAyuda.API.Extensions
         public static IServiceCollection AddMesaAyudaContext(this IServiceCollection services, string connectionString)
         {
             return services
-                //.AddEntityFrameworkSqlServer()
+                .AddEntityFrameworkSqlServer()
                 .AddDbContext<MesaAyudaContext>(contextOptions =>
                 {
                     contextOptions.UseSqlServer(

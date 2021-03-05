@@ -11,7 +11,8 @@ namespace MesaAyuda.Infrastructure
     {
         public const string DEFAULT_SCHEMA = "dbo";
 
-        public DbSet<RequerimientoInfo> RequerimientoInfo { get; set; }
+        public DbSet<RequerimInf> RequerimInf { get; set; }
+        public DbSet<ReqQdetalle> ReqQdetalle { get; set; }
 
         public MesaAyudaContext(DbContextOptions<MesaAyudaContext> options) : base(options)
         {
@@ -19,7 +20,8 @@ namespace MesaAyuda.Infrastructure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new RequerimientoInfoEntitySchemaDefinition());
+            modelBuilder.ApplyConfiguration(new RequerimInfEntitySchemaDefinition());
+            modelBuilder.ApplyConfiguration(new ReqQdetalleEntitySchemaDefinition());
             base.OnModelCreating(modelBuilder);
         }
 
