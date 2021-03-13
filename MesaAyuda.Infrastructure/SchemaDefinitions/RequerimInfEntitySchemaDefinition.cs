@@ -8,7 +8,7 @@ namespace MesaAyuda.Infrastructure.SchemaDefinitions
     {
         public void Configure(EntityTypeBuilder<RequerimInf> builder)
         {
-            builder.HasNoKey();
+                builder.HasNoKey();
 
                 builder.ToTable("REQUERIM_INF");
 
@@ -78,7 +78,7 @@ namespace MesaAyuda.Infrastructure.SchemaDefinitions
                 builder.Property(e => e.Proyecto)
                     .HasMaxLength(20)
                     .IsUnicode(false)
-                    .HasColumnName("proyecto");
+                    .HasColumnName("proyecto");          
         }
     }
 }

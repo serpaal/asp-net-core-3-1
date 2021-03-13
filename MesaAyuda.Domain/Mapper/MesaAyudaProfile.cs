@@ -10,6 +10,8 @@ namespace MesaAyuda.Domain.Mapper
         {
             CreateMap<RequerimInf, RequerimInfResponse>();
             CreateMap<ReqQdetalle, ReqQdetalleResponse>();
+            CreateMap<RequerimientoInfo, RequerimientoInfoResponse>();
+            CreateMap<IncidentesInfo, IncidentesInfoResponse>();
             /*CreateMap<RequerimientoInfo, RequerimientoInfoResponse>()
                 .ForMember(dest => dest., opt => opt.MapFrom(src => src.Detalle)); */
         }

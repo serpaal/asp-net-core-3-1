@@ -1,10 +1,10 @@
 ﻿using MesaAyuda.Domain.Entities;
+using MesaAyuda.Domain.Responses;
 using MesaAyuda.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MesaAyuda.Infrastructure.Repositories
@@ -22,11 +22,29 @@ namespace MesaAyuda.Infrastructure.Repositories
 
         public async Task<IEnumerable<RequerimInf>> GetAsync()
         {
+            var estados = new List<String>() { "N", "R", "Z" };
             return await _context
                 .RequerimInf
+                .Where(x => x.CodURbl == "VBUS01" && estados.Contains(x.Estado))
                 .AsNoTracking()
-                .ToListAsync();
-            //return await _context.RequerimientoInfo.FromSqlRaw("SELECT * FROM dbo.requerimiento_info WHERE nro_req = 'R00003'").ToListAsync();
+                .ToListAsync();          
+        }
+
+        public async Task<IEnumerable<RequerimientoInfo>> GetRequerimientosAsync()
+        {           
+            var user = "VBUS01";          
+            
+            return await _context.RequerimientoInfos.FromSqlRaw(
+                    "SELECT r.*, q.descrip_req, q.justific, u.nomb_comp " +
+                    "FROM REQUERIM_INF r, REQ_QDETALLE q, " + 
+                    "USUARIOS u INNER JOIN USR_PERFILES p " +
+                    "ON p.login = u.login " +
+                    "WHERE r.nro_req = q.nro_req " +
+                    "AND r.cod_usr = p.cod_usr " +
+                    "AND q.cod_u_rbl = {0} " + 
+                    "AND q.estado IN ('N', 'R', 'Z')" + 
+                    "ORDER BY r.fecha_sol ASC", user
+                    ).ToListAsync();
         }
 
         public async Task<RequerimInf> GetAsync(string id)

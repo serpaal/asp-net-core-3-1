@@ -22,5 +22,11 @@ namespace MesaAyuda.Domain.Services
             var result = await _requerimInfRepository.GetAsync();
             return result.Select(x => _mapper.Map<RequerimInfResponse>(x));
         } 
+
+         public async Task<IEnumerable<RequerimientoInfoResponse>> GetRequerimientosAsync()
+        {
+            var result = await _requerimInfRepository.GetRequerimientosAsync();
+            return result.Select(x => _mapper.Map<RequerimientoInfoResponse>(x));
+        } 
     }
 }

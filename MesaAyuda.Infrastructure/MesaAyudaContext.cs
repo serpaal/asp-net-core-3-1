@@ -13,6 +13,9 @@ namespace MesaAyuda.Infrastructure
 
         public DbSet<RequerimInf> RequerimInf { get; set; }
         public DbSet<ReqQdetalle> ReqQdetalle { get; set; }
+        public DbSet<RequerimientoInfo> RequerimientoInfos { get; set; }
+         public DbSet<IncidentesInf> IncidentesInf { get; set; }
+         public DbSet<IncidentesInfo> IncidentesInfo { get; set; }
 
         public MesaAyudaContext(DbContextOptions<MesaAyudaContext> options) : base(options)
         {
@@ -22,6 +25,9 @@ namespace MesaAyuda.Infrastructure
         {
             modelBuilder.ApplyConfiguration(new RequerimInfEntitySchemaDefinition());
             modelBuilder.ApplyConfiguration(new ReqQdetalleEntitySchemaDefinition());
+            modelBuilder.ApplyConfiguration(new IncidentesInfEntitySchemaDefinition());
+            modelBuilder.Entity<RequerimientoInfo>(entity => { entity.HasNoKey(); });
+            modelBuilder.Entity<IncidentesInfo>(entity => { entity.HasNoKey(); });
             base.OnModelCreating(modelBuilder);
         }
 

@@ -16,5 +16,8 @@ namespace MesaAyuda.Domain.Responses
         public string Observ { get; set; }
         public string ArchAdj { get; set; }
         public string Estado { get; set; }
+        public string DescripReq { get; set; }
+        public string Justific { get; set; }
+        public string NombComp { get; set; }        
     }
 }

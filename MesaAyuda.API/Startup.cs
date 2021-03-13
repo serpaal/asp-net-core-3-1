@@ -19,6 +19,7 @@ namespace MesaAyuda.API
 {
     public class Startup
     {
+        //readonly string allowSpecificOrigins = "_allowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -33,9 +34,16 @@ namespace MesaAyuda.API
              .AddMesaAyudaContext(Configuration.GetSection("DataSource:ConnectionString").Value)
              .AddScoped<IRequerimInfRepository, RequerimInfRepository>()
              .AddScoped<IReqQdetalleRepository, ReqQdetalleRepository>()
+             .AddScoped<IIncidentesInfRepository, IncidentesInfRepository>()
              .AddMappers()
-             .AddServices()
-             .AddControllers();
+             .AddServices()            
+             .AddCors(options => options.AddPolicy("ApiCorsPolicy", builder =>
+             {
+                    builder.WithOrigins("http://localhost:4200")
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+             }))
+            .AddControllers();           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,9 +54,11 @@ namespace MesaAyuda.API
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
-
+            //app.UseHttpsRedirection(); rompe cors cuando esta descomentado
+            
             app.UseRouting();
+           
+            app.UseCors("ApiCorsPolicy");
 
             app.UseAuthorization();
 

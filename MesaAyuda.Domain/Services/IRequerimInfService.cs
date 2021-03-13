@@ -7,5 +7,6 @@ namespace MesaAyuda.Domain.Services
     public interface IRequerimInfService
     {
         Task<IEnumerable<RequerimInfResponse>> GetRequerimInfAsync();
+        Task<IEnumerable<RequerimientoInfoResponse>> GetRequerimientosAsync();
     }
 }
