@@ -16,10 +16,9 @@ namespace MesaAyuda.API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get(string cod_u_rbl = "VBUS01")
         {
-            //var result = await _requerimInfService.GetRequerimInfAsync();
-            var result = await _requerimInfService.GetRequerimientosAsync();
+            var result = await _requerimInfService.GetRequerimientosAsync(cod_u_rbl);
             return Ok(result);
         } 
     }
