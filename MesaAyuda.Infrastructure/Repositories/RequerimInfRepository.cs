@@ -30,12 +30,14 @@ namespace MesaAyuda.Infrastructure.Repositories
                 .ToListAsync();          
         }
 
-        public async Task<IEnumerable<RequerimientoInfo>> GetRequerimientosAsync()
+        public async Task<IEnumerable<RequerimientoInfo>> GetRequerimientosAsync(string cod_u_rbl)
         {           
-            var user = "VBUS01";          
+            var user = cod_u_rbl;          
             
             return await _context.RequerimientoInfos.FromSqlRaw(
-                    "SELECT r.*, q.descrip_req, q.justific, u.nomb_comp " +
+                    "SELECT  " + 
+                    "r.nro_req, r.fecha_sol, u.nomb_comp, r.cod_usr, r.cod_vinc, r.cod_area, r.proyecto, q.cod_u_rbl,  " +
+                    "r.fecha_cierre, r.cod_u_rcp, r.observ, r.arch_adj,  q.descrip_req, q.justific, q.estado " +
                     "FROM REQUERIM_INF r, REQ_QDETALLE q, " + 
                     "USUARIOS u INNER JOIN USR_PERFILES p " +
                     "ON p.login = u.login " +

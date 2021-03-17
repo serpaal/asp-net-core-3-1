@@ -7,6 +7,6 @@ namespace MesaAyuda.Domain.Services
     public interface IIncidentesInfService
     {
         Task<IEnumerable<IncidentesInfResponse>> GetIncidentesInfAsync();
-        Task<IEnumerable<IncidentesInfoResponse>> GetIncidentesAsync();
+        Task<IEnumerable<IncidentesInfoResponse>> GetIncidentesAsync(string cod_u_rbl);
     }
 }

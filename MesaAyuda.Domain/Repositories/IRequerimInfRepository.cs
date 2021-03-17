@@ -12,6 +12,6 @@ namespace MesaAyuda.Domain.Repositories
         RequerimInf Add(RequerimInf item);
         RequerimInf Update(RequerimInf item);
 
-        Task<IEnumerable<RequerimientoInfo>> GetRequerimientosAsync();
+        Task<IEnumerable<RequerimientoInfo>> GetRequerimientosAsync(string cod_u_rbl);
     }
 }

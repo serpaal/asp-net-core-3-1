@@ -23,9 +23,9 @@ namespace MesaAyuda.Domain.Services
             return result.Select(x => _mapper.Map<IncidentesInfResponse>(x));
         } 
 
-         public async Task<IEnumerable<IncidentesInfoResponse>> GetIncidentesAsync()
+         public async Task<IEnumerable<IncidentesInfoResponse>> GetIncidentesAsync(string cod_u_rbl)
         {
-            var result = await _incidentesInfRepository.GetIncidentesAsync();
+            var result = await _incidentesInfRepository.GetIncidentesAsync(cod_u_rbl);
             return result.Select(x => _mapper.Map<IncidentesInfoResponse>(x));
         } 
     }

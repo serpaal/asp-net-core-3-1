@@ -11,6 +11,6 @@ namespace MesaAyuda.Domain.Repositories
         IncidentesInf Add(IncidentesInf item);
         IncidentesInf Update(IncidentesInf item);
 
-        Task<IEnumerable<IncidentesInfo>> GetIncidentesAsync();
+        Task<IEnumerable<IncidentesInfo>> GetIncidentesAsync(string cod_u_rbl);
     }
 }

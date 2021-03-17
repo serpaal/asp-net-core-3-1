@@ -30,12 +30,14 @@ namespace MesaAyuda.Infrastructure.Repositories
                 .ToListAsync();          
         }
 
-        public async Task<IEnumerable<IncidentesInfo>> GetIncidentesAsync()
+        public async Task<IEnumerable<IncidentesInfo>> GetIncidentesAsync(string cod_u_rbl = "VBUS01")
         {           
-            var user = "VBUS01";          
+            var user = cod_u_rbl;          
             
             return await _context.IncidentesInfo.FromSqlRaw(
-                    "SELECT i.*, u.nomb_comp, d.descrip " +
+                    "SELECT  " + 
+                    "i.nro_inc, i.fecha_sol, u.nomb_comp, i.arch_adj, i.observ,  " +
+                    "d.descrip, d.estado, d.cod_u_rbl " +
                     "FROM INCIDENTES_INF i, " +
                     "INC_DETALLE d, " +
                     "USUARIOS u " +
