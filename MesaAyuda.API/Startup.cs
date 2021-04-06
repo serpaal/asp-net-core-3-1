@@ -35,6 +35,7 @@ namespace MesaAyuda.API
              .AddScoped<IRequerimInfRepository, RequerimInfRepository>()
              .AddScoped<IReqQdetalleRepository, ReqQdetalleRepository>()
              .AddScoped<IIncidentesInfRepository, IncidentesInfRepository>()
+             .AddScoped<IIncidentesRepository, IncidentesRepository>()
              .AddMappers()
              .AddServices()            
              .AddCors(options => options.AddPolicy("ApiCorsPolicy", builder =>

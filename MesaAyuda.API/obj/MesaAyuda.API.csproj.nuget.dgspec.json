@@ -1,33 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.API\\MesaAyuda.API.csproj": {}
+    "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.API\\MesaAyuda.API.csproj": {}
   },
   "projects": {
-    "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.API\\MesaAyuda.API.csproj": {
+    "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.API\\MesaAyuda.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.API\\MesaAyuda.API.csproj",
+        "projectUniqueName": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.API\\MesaAyuda.API.csproj",
         "projectName": "MesaAyuda.API",
-        "projectPath": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.API\\MesaAyuda.API.csproj",
-        "packagesPath": "C:\\Users\\palvarado\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.API\\obj\\",
+        "projectPath": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.API\\MesaAyuda.API.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\palvarado\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\MesaAyuda.Infrastructure.csproj": {
-                "projectPath": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\MesaAyuda.Infrastructure.csproj"
+              "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\MesaAyuda.Infrastructure.csproj": {
+                "projectPath": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\MesaAyuda.Infrastructure.csproj"
               }
             }
           }
@@ -71,26 +76,31 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\MesaAyuda.Domain.csproj": {
+    "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\MesaAyuda.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\MesaAyuda.Domain.csproj",
+        "projectUniqueName": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\MesaAyuda.Domain.csproj",
         "projectName": "MesaAyuda.Domain",
-        "projectPath": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\MesaAyuda.Domain.csproj",
-        "packagesPath": "C:\\Users\\palvarado\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\obj\\",
+        "projectPath": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\MesaAyuda.Domain.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\palvarado\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -129,34 +139,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\MesaAyuda.Infrastructure.csproj": {
+    "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\MesaAyuda.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\MesaAyuda.Infrastructure.csproj",
+        "projectUniqueName": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\MesaAyuda.Infrastructure.csproj",
         "projectName": "MesaAyuda.Infrastructure",
-        "projectPath": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\MesaAyuda.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\palvarado\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\obj\\",
+        "projectPath": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\MesaAyuda.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\palvarado\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\MesaAyuda.Domain.csproj": {
-                "projectPath": "D:\\projects\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\MesaAyuda.Domain.csproj"
+              "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\MesaAyuda.Domain.csproj": {
+                "projectPath": "D:\\projets\\net\\asp-net-core-3-1\\MesaAyuda.Domain\\MesaAyuda.Domain.csproj"
               }
             }
           }
@@ -184,6 +199,10 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.3, )"
+            },
+            "Microsoft.Windows.Compatibility": {
+              "target": "Package",
+              "version": "[5.0.2, )"
             }
           },
           "imports": [
@@ -201,7 +220,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

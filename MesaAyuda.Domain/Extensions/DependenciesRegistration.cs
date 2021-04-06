@@ -21,7 +21,8 @@ namespace MesaAyuda.Domain.Extensions
             services
                 .AddScoped<IRequerimInfService, RequerimInfService>()
                 .AddScoped<IReqQdetalleService, ReqQdetalleService>()
-                .AddScoped<IIncidentesInfService, IncidentesInfService>();
+                .AddScoped<IIncidentesInfService, IncidentesInfService>()
+                .AddScoped<IIncidentesService, IncidentesService>();
 
             return services;
         }        

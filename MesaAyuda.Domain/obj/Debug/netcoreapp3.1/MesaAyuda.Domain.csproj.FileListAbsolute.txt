@@ -24,3 +24,12 @@ D:\projects\net\asp-net-core-3-1\MesaAyuda.Domain\obj\Debug\netcoreapp3.1\MesaAy
 D:\projects\net\asp-net-core-3-1\MesaAyuda.Domain\obj\Debug\netcoreapp3.1\MesaAyuda.Domain.csproj.CoreCompileInputs.cache
 D:\projects\net\asp-net-core-3-1\MesaAyuda.Domain\obj\Debug\netcoreapp3.1\MesaAyuda.Domain.dll
 D:\projects\net\asp-net-core-3-1\MesaAyuda.Domain\obj\Debug\netcoreapp3.1\MesaAyuda.Domain.pdb
+D:\projets\net\asp-net-core-3-1\MesaAyuda.Domain\bin\Debug\netcoreapp3.1\MesaAyuda.Domain.deps.json
+D:\projets\net\asp-net-core-3-1\MesaAyuda.Domain\bin\Debug\netcoreapp3.1\MesaAyuda.Domain.dll
+D:\projets\net\asp-net-core-3-1\MesaAyuda.Domain\bin\Debug\netcoreapp3.1\MesaAyuda.Domain.pdb
+D:\projets\net\asp-net-core-3-1\MesaAyuda.Domain\obj\Debug\netcoreapp3.1\MesaAyuda.Domain.csprojAssemblyReference.cache
+D:\projets\net\asp-net-core-3-1\MesaAyuda.Domain\obj\Debug\netcoreapp3.1\MesaAyuda.Domain.AssemblyInfoInputs.cache
+D:\projets\net\asp-net-core-3-1\MesaAyuda.Domain\obj\Debug\netcoreapp3.1\MesaAyuda.Domain.AssemblyInfo.cs
+D:\projets\net\asp-net-core-3-1\MesaAyuda.Domain\obj\Debug\netcoreapp3.1\MesaAyuda.Domain.csproj.CoreCompileInputs.cache
+D:\projets\net\asp-net-core-3-1\MesaAyuda.Domain\obj\Debug\netcoreapp3.1\MesaAyuda.Domain.dll
+D:\projets\net\asp-net-core-3-1\MesaAyuda.Domain\obj\Debug\netcoreapp3.1\MesaAyuda.Domain.pdb
