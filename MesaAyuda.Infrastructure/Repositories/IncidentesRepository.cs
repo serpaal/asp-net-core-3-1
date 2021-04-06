@@ -23,7 +23,7 @@ namespace MesaAyuda.Infrastructure.Repositories
                     string sql = $@"SELECT 
                                     i.[nro_inc],
                                     i.[fecha_sol],
-                                    c.[nomb_comp],
+                                    u.[nomb_comp],
                                     i.[arch_adj],
                                     i.[observ],
                                     d.[descrip],
@@ -47,12 +47,19 @@ namespace MesaAyuda.Infrastructure.Repositories
                     dataReader = cmd.ExecuteReader();
                     while (dataReader.Read())
                     {
-                       
-                    }
-
-                    
+                        var incidente = new IncidentesInfo {
+                            nro_inc = dataReader.GetString(0),
+                            fecha_sol = dataReader.GetDateTime(1),
+                            nomb_comp = dataReader.GetString(2),
+                            arch_adj = dataReader.GetString(3),
+                            observ = dataReader.GetString(4),
+                            descrip = dataReader.GetString(5),
+                            estado = dataReader.GetString(6),
+                            cod_u_rbl = dataReader.GetString(7)                           
+                        };                                               
+                        result.Add(incidente);  
+                    }                    
                 }
-
                 return result;
             }
             catch (Exception)
