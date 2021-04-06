@@ -1,5 +1,6 @@
 ﻿using MesaAyuda.Domain.Entities;
 using MesaAyuda.Domain.Repositories;
+using MesaAyuda.Infrastructure.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Data.Odbc;
@@ -48,14 +49,14 @@ namespace MesaAyuda.Infrastructure.Repositories
                     while (dataReader.Read())
                     {
                         var incidente = new IncidentesInfo {
-                            nro_inc = dataReader.GetString(0),
-                            fecha_sol = dataReader.GetDateTime(1),
-                            nomb_comp = dataReader.GetString(2),
-                            arch_adj = dataReader.GetString(3),
-                            observ = dataReader.GetString(4),
-                            descrip = dataReader.GetString(5),
-                            estado = dataReader.GetString(6),
-                            cod_u_rbl = dataReader.GetString(7)                           
+                            nro_inc = dataReader.SafeGetString(0),
+                            fecha_sol = dataReader.SafeGetDate(1),
+                            nomb_comp = dataReader.SafeGetString(2),
+                            arch_adj = dataReader.SafeGetString(3),
+                            observ = dataReader.SafeGetString(4),
+                            descrip = dataReader.SafeGetString(5),
+                            estado = dataReader.SafeGetString(6),
+                            cod_u_rbl = dataReader.SafeGetString(7)                           
                         };                                               
                         result.Add(incidente);  
                     }                    
