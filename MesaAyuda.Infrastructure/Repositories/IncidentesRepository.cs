@@ -1,16 +1,15 @@
-﻿using MesaAyuda.Domain.Entities;
-using MesaAyuda.Domain.Repositories;
-using MesaAyuda.Infrastructure.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data.Odbc;
+using MesaAyuda.Domain.Entities;
+using MesaAyuda.Domain.Repositories;
+using MesaAyuda.Infrastructure.Extensions;
 
 namespace MesaAyuda.Infrastructure.Repositories
 {
     public class IncidentesRepository : IIncidentesRepository
     {
-        private DbConnectionMesaAyudaSingleton _db;        
-
+        private DbConnectionMesaAyudaSingleton _db; 
         public IEnumerable<IncidentesInfo> GetIncidentes(string cod_u_rbl = "VBUS01")
         {           
            var user = cod_u_rbl;
