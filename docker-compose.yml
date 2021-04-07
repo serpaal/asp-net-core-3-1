@@ -1,0 +1,38 @@
+version: "3.7"
+services: 
+  net_core_api:
+    container_name: net_core_api
+    build: 
+      context: .
+      dockerfile: containers/api-net-core/Dockerfile
+    env_file: 
+      - containers/api-net-core/api-net-core.env  
+    networks: 
+      - my_network
+    ports: 
+      - 5002:5002
+  nestjs_api:
+    container_name: nestjs_api    
+    build: 
+      context: .
+      dockerfile: containers/api-nestjs/Dockerfile
+    networks: 
+      - my_network
+    ports: 
+      - 9001:9001
+    depends_on: 
+      - net_core_api   
+  angular_mesa_ayuda:
+    container_name: angular_mesa_ayuda    
+    build: 
+      context: .
+      dockerfile: containers/angular/Dockerfile
+    networks: 
+      - my_network
+    ports: 
+      - 4200:4200
+    depends_on: 
+      - nestjs_api       
+networks: 
+  my_network:
+    driver: bridge
